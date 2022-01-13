@@ -1,4 +1,5 @@
-
+var temp;
+var dmas;
 function B7(){
     var b7 = document.getElementById("b7").value
     var d = document.getElementById("display");
@@ -53,9 +54,65 @@ function dec(){
     var dec = document.getElementById("decimal").value
     var d = document.getElementById("display");
     d.value = d.value + dec
-    dec.disabled = true
+    document.getElementById("decimal").disabled = true;
 }
-
+function division(){
+    document.getElementById("decimal").disabled = false;
+    var mul = document.getElementById("division").value;
+    var d = document.getElementById("display");
+    temp = d.value;
+    d.value = document.getElementById("clear").value;
+    dmas=1;
+}
+function multiplication(){
+    document.getElementById("decimal").disabled = false;
+    var mul = document.getElementById("multiplication").value;
+    var d = document.getElementById("display");
+    temp = d.value;
+    d.value = document.getElementById("clear").value;
+    dmas=2;
+}
+function plus(){
+    document.getElementById("decimal").disabled = false;
+    var add = document.getElementById("plus").value;
+    var d = document.getElementById("display");
+    temp = d.value;
+    d.value = document.getElementById("clear").value;
+    dmas=3;
+}
+function subtraction(){
+    document.getElementById("decimal").disabled = false;
+    var add = document.getElementById("subtraction").value;
+    var d = document.getElementById("display");
+    temp = d.value;
+    d.value = document.getElementById("clear").value;
+    dmas=4;
+}
+function equals(){
+    document.getElementById("decimal").disabled = false;
+    var eq = document.getElementById("equals").value;
+    var d = document.getElementById("display");
+    if(dmas==1)
+    {
+        temp = parseFloat(temp) / parseFloat(d.value);
+        d.value=temp;
+    }
+    else if(dmas==2)
+    {
+        temp = parseFloat(temp) * parseFloat(d.value);
+        d.value=temp;
+    }
+    else if(dmas==3)
+    {
+        temp = parseFloat(temp) + parseFloat(d.value);
+        d.value=temp;
+    }
+    else if(dmas==4)
+    {
+        temp = parseFloat(temp) - parseFloat(d.value);
+        d.value=temp;
+    }
+}
 function Clr(){
     var c = document.getElementById("clear").value
     var d = document.getElementById("display");

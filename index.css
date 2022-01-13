@@ -1,19 +1,44 @@
+body{
+    align-content: center;
+    background-color: #FC766AFF;
+}
+table{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.342);  
+    backdrop-filter: blur(50px);
+}
 #display{
+    font-size: 20px;
     margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: khaki;
 }
 .numButton{
+    font-size: 15px;
+    border-radius: 5px;
     margin-bottom: 10px;
     font-weight: bold;
     width: 60%;
     column-span: 2;
 }
+.numButton:hover,.signButton:hover{
+    background-color: #3a9bfc;
+}
+.numButton:focus,.signButton:focus{
+    background-color: #393e44;
+}
 .signButton{
+    font-size: 15px;
+    border-radius: 5px;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight:bolder;
     width: 60%;
     column-span: 2;
 }
 input[type=text]{
+    text-decoration-color: lightcoral;
+    padding: 5px;
     direction: ltr;
     text-align: right;
 }
