@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="icon" type="image/x-icon" href="calc_favicon.ico">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="6"><input type="text" id="display" name="Display"/></td>
+            </tr>
+            <tr>
+                <td><button value="7" class="numButton" id="b7" onclick="B7()">7</button></td>
+                <td><button value="8" class="numButton" id="b8" onclick="B8()">8</button></td>
+                <td><button value="9" class="numButton" id="b9" onclick="B9()">9</button></td>
+                <td><button value="%" class="signButton" id="division" onclick="division()">/</button></td>
+            </tr>
+            <tr>
+                <td><button value="4" class="numButton" id="b4" onclick="B4()">4</button></td>
+                <td><button value="5" class="numButton" id="b5" onclick="B5()">5</button></td>
+                <td><button value="6" class="numButton" id="b6" onclick="B6()">6</button></td>
+                <td><button value="*" class="signButton" id="multiplication" onclick="multiplication()">*</button></td>
+            </tr>
+            <tr>
+                <td><button value="1" class="numButton" id="b1" onclick="B1()">1</button></td>
+                <td><button value="2" class="numButton" id="b2" onclick="B2()">2</button></td>
+                <td><button value="3" class="numButton" id="b3" onclick="B3()">3</button></td>
+                <td><button value="+" class="signButton" id="plus" onclick="plus()">+</button></td>
+            </tr>
+            <tr>
+                <td><button value=" " class="numButton" id="clear" onclick="Clr()">C</button></td>
+                <td><button value="0" class="numButton" id="b0" onclick="B0()">0</button></td>
+                <td><button value="." class="signButton" id="decimal" onclick="dec()">.</button></td>
+                <td><button value="-" class="signButton" id="subtraction" onclick="subtraction()">-</button></td>
+            </tr>
+            <tr>
+                <td colspan="6"><button value="=" class="signButton" id="equals" onclick="equals">=</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

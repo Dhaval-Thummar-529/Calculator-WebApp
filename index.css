@@ -1,0 +1,22 @@
+#display{
+    margin-bottom: 10px;
+}
+.numButton{
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 60%;
+    column-span: 2;
+}
+.signButton{
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 60%;
+    column-span: 2;
+}
+input[type=text]{
+    direction: ltr;
+    text-align: right;
+}
+td{
+    text-align: center;
+}
